@@ -1,20 +1,80 @@
-# ChatGPT ProBot
+# <s> ChatGPT </s> ProBot
 
 [![Release Version](https://img.shields.io/github/release/oceanlvr/ChatGPTBot.svg)](https://github.com/oceanlvr/ChatGPTBot/releases/latest) [![Twitter](https://img.shields.io/twitter/follow/AdaMeta1?style=social)](https://twitter.com/AdaMeta1)
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/apps/chatgptbot) [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oceanlvr/ChatGPTBot)
 
-A ChatGPT-based GitHub APP. Type `/chatgpt` to chat with robot 🤖️.
+A <s> ChatGPT-based </s>  GitHub APP. Type `/Probot` to chat with it . 
 
 ![hello](./assets/Hi.jpg)
 
-<s> Powered by [Probot](https://github.com/probot/probot) & [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) </s>
+<s> Powered by [Probot°°](https://github.com/probot/probot) & <s> [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) </s>
 
 BigModel.cn 
 
 ## Usage
 
 gh repo clone THUDM/z-ai-sdk-python
+**OR**¤
+import base64
+from zai import ZhipuAiClient
+
+def encode_image(image_path):
+    """将图像编码为base64格式"""
+    with open(image_path, 'rb') as image_file:
+        return base64.b64encode(image_file.read()).decode('utf-8')
+
+client = ZhipuAiClient(api_key="your-api-key")
+
+# 方式1：使用图像URL
+response = client.chat.completions.create(
+    model="glm-4v",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "这张图片里有什么？请详细描述。"
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": "https://example.com/image.jpg"
+                    }
+                }
+            ]
+        }
+    ]
+)
+
+print(response.choices[0].message.content)
+
+# 方式2：使用base64编码的图像
+base64_image = encode_image('path/to/your/image.jpg')
+
+response = client.chat.completions.create(
+    model="glm-4v",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "分析这张图片中的内容"
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/jpeg;base64,{base64_image}"
+                    }
+                }
+            ]
+        }
+    ]
+)
+
+print(response.choices[0].message.content)
 
 <s>**Try on [issue#1](https://github.com/oceanlvr/ChatGPT-ProBot/issues/1)**</s>
 
@@ -23,7 +83,7 @@ gh repo clone THUDM/z-ai-sdk-python
 | event       | description                       | example                                 |
 | ----------- | --------------------------------- | --------------------------------------- |
 | `/ping`     | ping robot status                 |                                         |
-| `/chatgpt`  | chat with bot on issue/PR comment | /chatgpt who are you?                   |
+| `/pro `  | chat with bot on issue/PR comment | /chatgpt who are you?                   |
 | `/review`   | auto review code in the PR        | /review fix the callback hell problem   |
 | `/refactor` | refactor the code                 | /refactor fix the callback hell problem |
 
