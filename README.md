@@ -8,13 +8,17 @@ A ChatGPT-based GitHub APP. Type `/chatgpt` to chat with robot 🤖️.
 
 ![hello](./assets/Hi.jpg)
 
-Powered by [Probot](https://github.com/probot/probot) & [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api)
+<s> Powered by [Probot](https://github.com/probot/probot) & [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) </s>
+
+BigModel.cn 
 
 ## Usage
 
-**Try on [issue#1](https://github.com/oceanlvr/ChatGPT-ProBot/issues/1)**
+gh repo clone THUDM/z-ai-sdk-python
 
-**Try Review/Refactor on [PR#7](https://github.com/oceanlvr/ChatGPT-ProBot/pull/7)**
+<s>**Try on [issue#1](https://github.com/oceanlvr/ChatGPT-ProBot/issues/1)**</s>
+
+<s>**Try Review/Refactor on [PR#7](https://github.com/oceanlvr/ChatGPT-ProBot/pull/7)**</s>
 
 | event       | description                       | example                                 |
 | ----------- | --------------------------------- | --------------------------------------- |
