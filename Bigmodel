@@ -1,0 +1,17 @@
+curl --request POST \
+  --url https://open.bigmodel.cn/api/paas/v4/chat/completions \
+  --header 'Authorization: d9098f6e3b4f4525aeb88cb7ad4d21b7.VqUReBDjhA1Edyle' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "model": "glm-4.5",
+  "do_sample": true,
+  "stream": false,
+  "thinking": {
+    "type": "enabled"
+  },
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "response_format": {
+    "type": "text"
+  }
+}'
