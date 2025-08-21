@@ -1,4 +1,4 @@
-# <s> ChatGPT </s> ProBot
+# <s> ChatGPT </s>  ProBot
 
 [![Release Version](https://img.shields.io/github/release/oceanlvr/ChatGPTBot.svg)](https://github.com/oceanlvr/ChatGPTBot/releases/latest) [![Twitter](https://img.shields.io/twitter/follow/AdaMeta1?style=social)](https://twitter.com/AdaMeta1)
 
@@ -8,14 +8,17 @@ A <s> ChatGPT-based </s>  GitHub APP. Type `/Probot` to chat with it .
 
 ![hello](./assets/Hi.jpg)
 
-<s> Powered by [Probot°°](https://github.com/probot/probot) & <s> [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) </s>
+Powered by [Probot°°](https://github.com/probot/probot) & <s> [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) </s>
 
-BigModel.cn 
+</s>
+Open.BigModel.Cn
 
 ## Usage
 
 gh repo clone THUDM/z-ai-sdk-python
-**OR**¤
+
+**OR**
+
 import base64
 from zai import ZhipuAiClient
 
@@ -78,12 +81,13 @@ print(response.choices[0].message.content)
 
 <s>**Try on [issue#1](https://github.com/oceanlvr/ChatGPT-ProBot/issues/1)**</s>
 
-<s>**Try Review/Refactor on [PR#7](https://github.com/oceanlvr/ChatGPT-ProBot/pull/7)**</s>
+<s>
+**Try Review/Refactor on [PR#7](https://github.com/oceanlvr/ChatGPT-ProBot/pull/7)** </s>
 
 | event       | description                       | example                                 |
 | ----------- | --------------------------------- | --------------------------------------- |
 | `/ping`     | ping robot status                 |                                         |
-| `/pro `  | chat with bot on issue/PR comment | /chatgpt who are you?                   |
+| `/pro `  | chat with bot on issue/PR comment | ro who are you?                   |
 | `/review`   | auto review code in the PR        | /review fix the callback hell problem   |
 | `/refactor` | refactor the code                 | /refactor fix the callback hell problem |
 
